@@ -2,19 +2,27 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    left: 200px;
+    z-index: 10;
 }
 
 .mavi{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: blue;
+    background: rgba(0, 0, 255, 0.5);
+    position: absolute;
+    left: 300px;
 }
 
 .sari{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.5);
+    position: absolute;
+    left: 250px;
+    top: 100px;
 }
