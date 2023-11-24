@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  50%  {background-color:yellow; left:200px; top:0px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.up-down{
+  animation: up-down linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: up-down linear 4s;
+}
+@keyframes up-down {
+
+from {
+    transform:  translateY(1px,20px)  ;
+  }
+  to {
+    transform:  translateY(1px,30px)  ;
+  }
+}
+
+
+</style>
+</head>
+<body>
+   
+
+
+    <div class="container">
+        <div class="alternate-reverse"> </div>
+       <div class="up-down"></div>
+
+</div>
+
+</body>
+</html>
+
+
